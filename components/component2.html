@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Low Shoulder - Design System</title>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- This is where you put your google font in if applicable -->
+  <!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+  <!-- This is the link to the toggle hamburger -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lowshoulder.css">
+  <link rel="stylesheet" href="../css/prism.css" />
+</head>
+
+<body>
+
+  <div class="d-flex">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="toggle-btn">
+          <span class="sr-only">Toggle Menu</span>
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+      <div class="p-4 pt-6">
+        <div class="logo">
+          <a href="../index.html"><img alt="Low Shoulder logo" src="../img/logo.png" width="100%" /></a>
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="../foundation/type.html">Typography</a>
+              </li>
+              <li>
+                <a href="../foundation/color.html">Color</a>
+              </li>
+              <li>
+                <a href="../foundation/logo.html">Logo</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Components</a>
+            <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+              <li>
+                <a href="component1.html">Buttons</a>
+              </li>
+              <li>
+                <a href="#">Image Placeholders</a>
+              </li>
+              <li>
+                <a href="component3.html">Footers</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+            <ul class="collapse list-unstyled" id="PatternsSubmenu">
+              <li>
+                <a href="../patterns/pattern1.html">Home Page</a>
+              </li>
+              <li>
+                <a href="../patterns/pattern2.html">Artist Page</a>
+              </li>
+
+            </ul>
+          </li>
+
+
+        </ul>
+
+
+
+
+      </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div class="container">
+      <div class="row p-5 pt-6">
+        <div id="content">
+
+          <h1>Image Placeholders</h1>
+          <div class="col-8">
+            <p>Image Placeholders are dummy images used to draw attention without using actual images. Examples of the images used on Low Shoulder are shown below.</p>
+          </div>
+          <h2>Image Examples</h2>
+
+          <div class="row mb-5 card-example">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="card">
+                <img src="../img/nu.jpeg" class="card-img-top" alt="album artwork">
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="card">
+                <img src="../img/takeout.jpeg" class="card-img-top" alt="album artwork">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-8">
+            <h2>Accessibility Considerations</h2>
+
+            <p>To ensure accessibility, always include descriptive and meaningful alt text for images.</p>
+
+            <h2>Usage</h2>
+
+            <ul>
+              <li>Use image placeholders to display a preview of content presented on other pages.</li>
+              <li>Links may be nested in images, leading to merchandise pages or artist pages.</li>
+            </ul>
+
+            <!-- Code example - this is what the prism.js and css are for added in this page - replace: all '<' with &lt; and  '>' with &gt; and all quotes with &quot; -->
+            <pre>
+            <code>
+              &lt;div class="row mb-5 card-example"&gt;
+              &lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-6"&gt;
+              &lt;div class="card"&gt;
+              &lt;img src="../img/nu.jpeg"
+                         class="card-img-top"
+                         alt="album artwork"&gt;
+                         &lt;/div&gt;
+                         &lt;/div&gt;
+            </code>
+          </pre>
+          </div> <!-- Content  -->
+        </div><!-- Row  -->
+      </div><!-- Container -->
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

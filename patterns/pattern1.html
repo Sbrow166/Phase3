@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Low Shoulder - Design System</title>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- This is where you put your google font in if applicable -->
+  <!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+  <!-- This is the link to the toggle hamburger -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/lowshoulder.css">
+</head>
+
+<body>
+
+  <div class="d-flex">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="toggle-btn">
+          <span class="sr-only">Toggle Menu</span>
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+      <div class="p-4 pt-6">
+        <div class="logo">
+          <a href="../index.html"><img alt="Low Shoulder logo" src="../img/logo.png" width="100%" /></a>
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="../foundation/type.html">Typography</a>
+              </li>
+              <li>
+                <a href="../foundation/color.html">Color</a>
+              </li>
+              <li>
+                <a href="../foundation/logo.html">Logo</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Components</a>
+            <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+              <li>
+                <a href="../components/component1.html">Buttons</a>
+              </li>
+              <li>
+                <a href="../components/component2.html">Image Placeholders</a>
+              </li>
+              <li>
+                <a href="../components/component3.html">Footers</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+            <ul class="collapse.show list-unstyled" id="PatternsSubmenu">
+              <li>
+                <a href="#">Home Page</a>
+              </li>
+              <li>
+                <a href="pattern2.html">Artist Page</a>
+              </li>
+
+            </ul>
+          </li>
+
+
+        </ul>
+
+
+
+
+      </div>
+    </nav>
+
+     <!-- Page Content  -->
+     <div class="container pattern">
+      <div class="row p-5 pt-6">
+        <div id="content">
+          <h2>Home Page - Patterns</h2>
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+            <li id="desktop" class="nav-item active" onclick="navClick(this.id)"><a class="nav-link active" data-toggle="tab"
+                href="#Desktop">Desktop</a></li>
+            <li id="desktop-grid" class=" nav-item" onclick="navClick(this.id)"><a class="nav-link" data-toggle="tab"
+                href="#DesktopGrid">Desktop Grid</a></li>
+            <li id="tablet" class=" nav-item" onclick="navClick(this.id)"><a class="nav-link" data-toggle="tab"
+                href="#Tablet">Tablet</a>
+            </li>
+            <li id="tablet-grid" class=" nav-item" onclick="navClick(this.id)"><a class="nav-link" data-toggle="tab"
+                href="#TabletGrid">Tablet Grid</a></li>
+            <li id="mobile" class=" nav-item" onclick="navClick(this.id)"><a class="nav-link" data-toggle="tab"
+                href="#Mobile">Mobile</a>
+            </li>
+            <li id="mobile-grid" class=" nav-item" onclick="navClick(this.id)"><a class="nav-link" data-toggle="tab"
+                href="#MobileGrid">MobileGrid</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="Desktop" class="tab-pane active">
+              <h3>Desktop</h3>
+              <img src="../img/Homepage - Desktop (1512).jpg" class="img-responsive w-100" />
+            </div>
+            <div id="DesktopGrid" class="tab-pane">
+              <h3>Desktop Grid</h3>
+              <img src="../img/Homepage - Desktop Grid(1512).jpg" class="img-responsive w-100" />
+            </div>
+            <div id="Tablet" class="tab-pane">
+              <h3>Tablet</h3>
+              <img src="../img/Homepage - Tablet (834).jpg" class="img-responsive w-100" />
+            </div>
+            <div id="TabletGrid" class="tab-pane">
+              <h3>Tablet Grid</h3>
+              <img src="../img/Homepage - Tablet Grid (834).jpg" class="img-responsive w-100" />
+            </div>
+            <div id="Mobile" class="tab-pane">
+              <h3>Mobile</h3>
+              <img src="../img/Homepage - Mobile (390).jpg" class="img-responsive w-100" />
+            </div>
+            <div id="MobileGrid" class="tab-pane">
+              <h3>Mobile Grid</h3>
+              <img src="../img/Homepage - Mobile Grid (390).jpg" class="img-responsive w-100">
+            </div>
+          </div>
+        </div> <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    function navClick(id) {
+      var element = document.getElementById(id);
+      let siblings = element.parentElement.children;
+      for (let sib of siblings) {
+        sib.classList.remove('active')
+      }
+      element.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
